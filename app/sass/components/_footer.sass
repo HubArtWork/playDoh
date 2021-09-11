@@ -1,0 +1,28 @@
+@import "vars"
+
+.footer
+	background-image: url(../img/footer-bg-min.png)
+	background-repeat: no-repeat
+	background-position: center top
+	background-size: 100% 100%
+	padding: 107px 0 53px
+	position: relative
+	z-index: 10
+	p
+		max-width: 1027px
+		font-size: 16px
+		line-height: 1
+		font-weight: 600
+		color: $colorAccent
+		a
+			color: $colorAccent
+
+@media only screen and (max-width : 580px)
+	.footer
+		padding: 94px 0 50px
+		text-align: center
+		background-image: url(../img/footer-bg-mob-min.png)
+		p
+			min-height: 113px
+			font-size: 14px
+			line-height: 16px

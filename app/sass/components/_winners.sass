@@ -1,0 +1,197 @@
+@import "vars"
+
+.select.select-date
+	width: 260px
+	position: relative
+	.select2
+		width: 260px!important
+	&::before
+		content: ''
+		position: absolute
+		top: 50%
+		transform: translate(0,-50%)
+		background-repeat: no-repeat
+		background-position: center
+		background-size: contain
+		z-index: 10
+		left: 20px
+		width: 18px
+		height: 18px
+		background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.00029 0H4.80029V3.6H6.00029V0ZM18 4.80007C18 2.81185 16.3882 1.20007 14.4 1.20007V2.40007C15.7255 2.40007 16.8 3.47459 16.8 4.80007H1.2C1.2 3.47459 2.27452 2.40007 3.6 2.40007V1.20007C1.61177 1.20007 0 2.81185 0 4.80007V14.4001C0 16.3883 1.61177 18.0001 3.6 18.0001H14.4C16.3882 18.0001 18 16.3883 18 14.4001V4.80007ZM7.19971 2.40007H10.7997V1.20007H7.19971V2.40007ZM1.19971 6V14.4C1.19971 15.7255 2.27422 16.8 3.59971 16.8H14.3997C15.7252 16.8 16.7997 15.7255 16.7997 14.4V6H1.19971ZM12 0H13.2V3.6H12V0ZM6.00015 7.20007H2.40015V10.8001H6.00015V7.20007ZM7.19971 7.20007H10.7997V10.8001H7.19971V7.20007ZM6.00015 12H2.40015V15.6H6.00015V12ZM7.19971 12H10.7997V15.6H7.19971V12ZM15.6 7.20007H12V10.8001H15.6V7.20007Z' fill='%230460A0'/%3E%3C/svg%3E%0A")
+	.select2-container .select2-selection--single
+		display: block
+		padding: 0 30px 0 53px
+		width: 260px
+		height: 46px
+		background: $colorMain
+		box-shadow: 2px 2px 2px rgba(104, 39, 0, 0.35)
+		border: none
+		border-radius: 30px
+		position: relative
+	.select2-container .select2-selection--single .select2-selection__rendered
+		font-family: $MyriadPro
+		font-size: 14px
+		line-height: 16px
+		font-weight: 600
+		color: $colorAccent
+		padding: 15px 0
+	.select2-container--default .select2-selection--single .select2-selection__arrow
+		width: 16px
+		height: 8px
+		top: 50%
+		left: auto
+		right: 20px
+		margin-top: -4.5px
+		width: 17px
+		height: 9px
+		background-image: url("data:image/svg+xml,%3Csvg width='17' height='9' viewBox='0 0 17 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.361142 0.52384C0.900276 -0.105149 1.84723 -0.177991 2.47621 0.361142L8.50003 5.52441L14.5238 0.361142C15.1528 -0.177991 16.0998 -0.105149 16.6389 0.52384C17.178 1.15283 17.1052 2.09978 16.4762 2.63891L9.47621 8.63891C8.91448 9.1204 8.08557 9.1204 7.52384 8.63891L0.52384 2.63891C-0.105149 2.09978 -0.177991 1.15283 0.361142 0.52384Z' fill='%230460A0'/%3E%3C/svg%3E%0A")
+		background-repeat: no-repeat
+		background-position: center
+		background-size: contain
+	.select2-container--default .select2-selection--single .select2-selection__arrow b
+		display: none!important
+	.select2-container--open .select2-dropdown--below
+		width: 260px!important
+
+.search
+	width: 260px
+	position: relative
+	button
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		width: 46px
+		height: 46px
+		border-radius: 50%
+		background: $colorMain
+		border: none
+		&::after
+			content: ''
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			width: 17px
+			height: 17px
+			background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.20711 7.5C1.20711 9.02862 1.66442 10.4504 2.4497 11.6361L0.43934 13.6464C-0.146447 14.2322 -0.146447 15.182 0.43934 15.7678C1.02513 16.3536 1.97487 16.3536 2.56066 15.7678L4.57102 13.7574C5.75667 14.5427 7.17848 15 8.70711 15C12.8492 15 16.2071 11.6421 16.2071 7.5C16.2071 3.35786 12.8492 0 8.70711 0C4.56497 0 1.20711 3.35786 1.20711 7.5ZM13.2071 7.5C13.2071 9.98528 11.1924 12 8.70711 12C6.22183 12 4.20711 9.98528 4.20711 7.5C4.20711 5.01472 6.22183 3 8.70711 3C11.1924 3 13.2071 5.01472 13.2071 7.5Z' fill='%230460A0'/%3E%3C/svg%3E%0A")
+			background-repeat: no-repeat
+			background-position: center
+			background-size: contain
+	input
+		display: block
+		width: 100%
+		height: 46px
+		border: none
+		border-radius: 30px
+		box-shadow: 2px 2px 2px rgba(104, 39, 0, 0.35)
+		background-color: #fff
+		padding: 0 20px 0 57px
+		font-size: 14px
+		line-height: 16px
+		font-weight: 600
+		color: $colorAccent
+		&::-webkit-input-placeholder
+			color: rgba($colorAccent, 1)
+		&:-moz-placeholder
+			color: rgba($colorAccent, 1)
+		&::-moz-placeholder
+			color: rgba($colorAccent, 1)
+		&:-ms-input-placeholder
+			color: rgba($colorAccent, 1)
+
+.winners
+	.page-content
+		padding-bottom: 71px
+	.wrapper
+		max-width: 1090px
+	.mCSB_inside>.mCSB_container
+		margin: 0
+	.table
+		&-content
+			max-height: 375px
+		&-row
+			align-items: center
+			padding-bottom: 6px
+			.col-1
+				width: 28.5%
+			.col-2
+				width: 25.8%
+			.col-3
+				width: 21.2%
+			.col-4
+				display: flex
+				flex-flow: row nowrap
+				align-items: center
+				min-width: 255px
+				width: 255px
+				padding-right: 20px
+				font-size: 14px
+				line-height: 17px
+		&-top
+			padding-bottom: 27px
+		&-img
+			display: block
+			width: 62px
+			min-width: 62px
+			height: 50px
+			position: relative
+			img,svg
+				display: block
+				max-height: 43px
+				max-width: 42px
+				position: absolute
+				top: 50%
+				right: 31px
+				transform: translate(0,-50%)
+			&-big
+				img,svg
+					right: 10px
+					max-height: 56px
+					max-width: 89px
+			&-middle
+				img,svg
+					right: 14px
+					max-height: 50px
+					max-width: 59px
+
+@media only screen and (max-width : 768px)
+	.winners
+		.page
+			&-content
+				padding-bottom: 59px
+		.table
+			&-content
+				max-height: 100%
+			&-row
+				.col-1
+					min-width: 280px
+					width: 280px
+				.col-2,.col-3
+					display: none
+			&-mob
+				display: block
+			&-top
+				padding-bottom: 20px
+				b
+					display: none
+
+@media only screen and (max-width : 580px)
+	.winners
+		.table
+			&-row
+				.col-1
+					min-width: 174px
+					width: 174px
+				.col-4
+					min-width: auto
+					width: 100%
+					padding-right: 0
+
+@media only screen and (max-width : 375px)
+	.winners
+		.table
+			&-row
+				.col-1
+					min-width: 150px
+					width: 150px

@@ -1,0 +1,128 @@
+@import "vars"
+
+.faq
+	.page
+		&-top
+			min-height: auto
+		&-wrap
+			min-height: 1040px
+			padding-bottom: 33px
+	.wrapper
+		max-width: 1092px
+	&-row
+		display: flex
+		flex-flow: row nowrap
+		justify-content: space-between
+		padding-top: 22px
+	&-col
+		max-width: 500px
+		width: 100%
+		padding-right: 50px
+	&-form
+		max-width: 360px
+		padding-right: 0
+	&-title,&-subtitle
+		display: block
+		font-size: 16px
+		line-height: 1.2
+		font-weight: 900
+		color: #fff
+		text-align: center
+	&-title
+		margin: 0 0 21px
+	&-subtitle
+		max-width: 228px
+		margin: 0 auto 30px
+	&-wrap
+		padding: 33px 28px 39px
+		border: 2px dashed #fff
+		border-radius: 20px
+		.input-block
+			input,textarea,select
+				height: 40px
+				background-color: rgba(255, 255, 255, 0.3)
+				border: none
+				border-radius: 20px
+				font-size: 16px
+				font-weight: 600
+				color: #fff
+				&::-webkit-input-placeholder
+					color: rgba(#fff, 1)
+				&:-moz-placeholder
+					color: rgba(#fff, 1)
+				&::-moz-placeholder
+					color: rgba(#fff, 1)
+				&:-ms-input-placeholder
+					color: rgba(#fff, 1)
+			textarea
+				height: 150px
+	&-btn
+		padding-top: 28px
+		text-align: center
+		.primary-btn
+			margin: 0 auto
+
+.accordeon
+	padding-bottom: 30px
+	&-top
+		font-size: 18px
+		line-height: 21px
+		font-weight: 900
+		color: #fff
+		padding: 4.5px 0 4.5px 40px
+		position: relative
+		cursor: pointer
+		&::after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 30px
+			height: 30px
+			background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z' fill='%23F8E711'/%3E%3Crect x='20' y='14' width='2' height='10' rx='1' transform='rotate(90 20 14)' fill='%230460A0'/%3E%3Crect x='16' y='20' width='2' height='10' rx='1' transform='rotate(-180 16 20)' fill='%230460A0'/%3E%3C/svg%3E%0A")
+			background-repeat: no-repeat
+			background-position: center
+			background-size: contain
+	&-block
+		padding-left: 40px
+		padding-top: 10px
+		p, ol, ul
+			font-size: 16px
+			line-height: 21px
+			font-weight: 600
+			color: #fff
+			a,span,b
+				font-weight: 600
+				color: #fff
+			b
+				display: block
+		p, ul, ol
+			padding-bottom: 18px
+			&.text-small
+				padding-left: 18px
+		p
+			&:last-child
+				padding-bottom: 0
+	&.accordeon-active
+		.accordeon
+			&-top
+				&::after
+					background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z' fill='white'/%3E%3Crect x='20' y='14' width='2' height='10' rx='1' transform='rotate(90 20 14)' fill='%230460A0'/%3E%3C/svg%3E%0A")
+	
+@media only screen and (max-width : 768px)
+	.faq
+		.page
+			&-wrap
+				padding-bottom: 55px
+		&-row
+			display: block
+			padding-top: 25px
+			margin: 0 -12px
+		&-col
+			width: 100%
+			max-width: 100%
+			padding: 0 12px 50px 12px
+		&-form
+			max-width: 460px
+			margin: 0 auto
+			padding: 0
