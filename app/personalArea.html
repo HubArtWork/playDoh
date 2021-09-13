@@ -17,7 +17,8 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 </head>
 <body>
-	<div class="page index">
+	<div class="page personalArea">
+		<div class="page-bg" style="background-image: url(img/page-bg-2-min.jpg);"></div>
 		<!-- start header -->
 		<header class="header">
 			<div class="wrapper">
@@ -26,9 +27,9 @@
 				<div class="header-wrap">
 					<ul class="header-list">
 						<li><a href="#">Главная</a></li>
-						<li><a href="#" class="active">Победители</a></li>
+						<li><a href="#">Победители</a></li>
 						<li><a href="#">Правила</a></li>
-						<li><a href="#">FAQ</a></li>
+						<li><a href="#" class="active">FAQ</a></li>
 					</ul>
 					<a href="#" class="header-link">Личный кабинет</a>
 				</div>
@@ -41,69 +42,61 @@
 			</div>
 		</header>
 		<!-- end header -->
-		<!-- start main -->
-		<section class="main">
-			<div class="main-img-1">
-				<picture>
-				 	<source srcset="img/main/img-1-min.png" media="(min-width: 769px)">
-				 	<img src="img/main/mob-1-min.png" alt="MDN">
-				</picture>
-			</div>
-			<div class="main-top">
-				<div class="wrapper">
-					<div class="main-bg" style="background-image: url(img/main/bg-1-min.png);"></div>
-					<div class="main-bg main-bg-mob" style="background-image: url(img/main/bg-1-mob-min.png);"></div>
-					<div class="main-human">
-						<img src="img/main/human-1-min.png" alt="" class="human-1">
-						<img src="img/main/human-2-min.png" alt="" class="human-2">
-					</div>
-					<div class="main-human main-human-mob">
-						<img src="img/main/human-1-mob-min.png" alt="" class="human-1">
-						<img src="img/main/human-2-mob-min.png" alt="" class="human-2">
-						<img src="img/main/human-3-mob-min.png" alt="" class="human-3">
-						<img src="img/main/human-4-mob-min.png" alt="" class="human-4">
-					</div>
-					<div class="main-img-2"><img src="img/main/img-2-min.png" alt=""></div>
-					<div class="main-wrap">
-						<div class="main-row">
-							<div class="main-col">
-								<div class="main-ico"><img src="img/main/ico-1-min.png" alt=""></div>
-								<span class="main-tit">КУПИ Play-Doh</span>
-								<p>на сумму от 300 рублей</p>
-							</div>
-							<div class="main-col">
-								<div class="main-ico"><img src="img/main/ico-2-min.png" alt=""></div>
-								<span class="main-tit">Загрузи ЧЕК</span>
-								<p>на сайте promo-play-doh.ru</p>
-							</div>
-							<div class="main-col">
-								<div class="main-ico"><img src="img/main/ico-3-min.png" alt=""></div>
-								<span class="main-tit">ВыигрАЙ</span>
-								<p>1 из 1000 наборов Play-Doh</p>
-							</div>
-						</div>
-						<div class="main-button">
-							<a href="#" class="primary-btn primary-btn-big">Участвовать</a>
-						</div>
+		<!-- start page -->
+		<section class="page-wrap">
+			<div class="wrapper">
+				<div class="page-top">
+					<h1 class="page-title">FAQ</h1>
+					<ul class="page-list">
+						<li><a href="mailto:konstantinmymail@mail.com">
+							<i class="hb-ico mail-ico"></i>
+							<span>konstantinmymail@mail.com</span>
+						</a></li>
+						<li><a href="tel:+79999999999">
+							<i class="hb-ico phone-ico"></i>
+							<span>+7 (999) 999-99-99</span>
+						</a></li>
+					</ul>
+					<span class="page-name">Константин аристархович <b>Константинопольский</b></span>
+					<a href="#" class="page-link">Выйти</a>
+					<div class="page-button">
+						<a href="#" class="primary-btn primary-btn-big">Загрузить чек</a>
 					</div>
 				</div>
-			</div>
-			<div class="main-bottom">
-				<div class="main-bg-2" style="background-image: url(img/main/bg-2-min.png);"></div>
-				<div class="wrapper">
-					<div class="main-img-3"><img src="img/main/img-3-min.png" alt=""></div>
-					<div class="main-img-4"><img src="img/main/img-4-min.png" alt=""></div>
-					<div class="main-img-3 main-img-mob"><img src="img/main/img-3-mob-min.png" alt=""></div>
-					<div class="main-info">
-						<div class="main-text"><img src="img/main/text-min.png" alt=""></div>
-						<h2 class="main-title">Участвуй в конкурсе <span>#слепискрепыша</span> в Инстаграм и выиграй крутой планшет или полный набор скрепышей!</h2>
-						<div class="main-img-4 main-img-mob-2"><img src="img/main/img-4-mob-min.png" alt=""></div>
-						<span class="main-subtitle">* Призы могут отличаться по внешнему виду от изображений на рекламных материалах.</span>
+				<div class="page-content">
+					<div class="personalArea-row">
+						<div class="personalArea-col personalArea-col-first">
+							<div class="personalArea-wrap">
+								<span class="personalArea-title">Мои чеки</span>
+								.personalArea
+							</div>
+						</div>
+						<div class="personalArea-col personalArea-col-second">
+							<div class="personalArea-wrap">
+								<span class="personalArea-title">Мои призы</span>
+								<div class="personalArea-images">
+									<div class="personalArea-slider swiper-container">
+										<div class="swiper-wrapper">
+											<div class="personalArea-slide swiper-slide">
+												<div class="personalArea-img"><img src="img/personalArea/img-1-min.png" alt=""></div>
+												<span class="personalArea-tit">набор скрепышей</span>
+											</div><!-- slide -->
+											<div class="personalArea-slide swiper-slide">
+												<div class="personalArea-img"><img src="img/personalArea/img-1-min.png" alt=""></div>
+												<span class="personalArea-tit">набор скрепышей</span>
+											</div><!-- slide -->
+										</div>
+										<div class="swiper-button-next"></div>
+										<div class="swiper-button-prev"></div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- end main -->
+		<!-- end page -->
 		<!-- start footer -->
 		<footer class="footer">
 			<div class="wrapper">

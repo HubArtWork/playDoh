@@ -1,2 +1,338 @@
 @import "vars"
 
+.page
+	&.index
+		position: relative
+		min-height: auto
+		padding: 0
+		.footer
+			background-image: none!important
+			background-color: #fff
+			padding-top: 55px
+
+.main
+	&-img-1
+		position: absolute
+		top: 0
+		right: 0
+		img,svg
+			display: block
+			max-width: 955px
+	&-top
+		padding-top: 125px
+		.wrapper
+			position: relative
+	&-human
+		position: absolute
+		top: 0
+		left: -7px
+		img,svg
+			display: block
+			&.human-1
+				max-width: 640px
+			&.human-2
+				position: absolute
+				bottom: 150px
+				left: 40px
+				max-width: 485px
+				z-index: 50
+		&-mob
+			display: none
+	&-img-2
+		position: absolute
+		top: 380px
+		right: 19px
+		z-index: 6
+		img,svg
+			max-width: 382px
+	&-bg
+		position: absolute
+		top: 253px
+		left: 57%
+		transform: translate(-50%,0)
+		width: 1438px
+		height: 1187px
+		background-repeat: no-repeat
+		background-position: center
+		background-size: contain
+		z-index: 5
+		&-mob
+			display: none
+	&-wrap
+		padding: 641px 0 150px
+	&-row
+		display: flex
+		flex-flow: row nowrap
+		padding: 0 60px 0 40px
+		margin: 0 -20px
+		position: relative
+		z-index: 10
+	&-col
+		width: 33.333%
+		padding: 0 20px 36px
+		text-align: center
+		p
+			font-size: 21px
+			line-height: 25px
+			font-weight: 600
+			color: #fff
+	&-ico
+		img,svg
+			display: block
+			max-width: 153px
+			margin: 0 auto
+	&-tit
+		display: block
+		font-size: 30px
+		line-height: 1.2
+		font-weight: 900
+		text-transform: uppercase
+		color: $colorMain
+		margin: -7px 0 4px
+	&-button
+		position: relative
+		z-index: 10
+		.primary-btn
+			margin: 0 auto
+	&-bottom
+		padding: 0
+		background-color: #fff
+		position: relative
+		z-index: 11
+		.wrapper	
+			position: relative
+	&-bg-2
+		position: absolute
+		left: 0
+		top: -60px
+		width: 100%
+		height: 447px
+		background-repeat: no-repeat
+		background-position: top center
+		background-size: cover
+	&-img-3
+		position: absolute
+		top: -229px
+		left: -85px
+		img,svg
+			max-width: 271px
+	&-info
+		max-width: 682px
+		position: relative
+		z-index: 20
+	&-text
+		display: flex
+		justify-content: flex-end
+		padding: 0 180px 35px 0
+		img,svg
+			display: block
+			max-width: 315px
+	&-img-4
+		position: absolute
+		top: -123px
+		right: 4px
+		img,svg
+			display: block
+			max-width: 688px
+	&-title,&-subtitle
+		display: block
+	&-title
+		font-size: 50px
+		line-height: 1.1
+		font-weight: 900
+		color: $colorAccent
+		margin: 0 0 5px
+		span
+			display: block
+			color: #B30000
+	&-subtitle
+		font-size: 20px
+		line-height: 1.3
+		font-weight: bold
+		color: #A2A2A2
+		margin: 0
+	&-img-mob,&-img-mob-2
+		display: none
+
+@media only screen and (max-width : 1300px)
+	.main
+		&-img-1
+			img,svg
+				max-width: 800px
+		&-img-2
+			top: 400px
+		&-img-4
+			right: -30px
+			img,svg
+				max-width: 550px
+		
+@media only screen and (max-width : 960px)
+	.main
+		&-img-1
+			img,svg
+				max-width: 660px
+		&-img-4
+			img,svg
+				max-width: 400px
+
+@media only screen and (max-width : 768px)
+	.page.index .footer
+		text-align: center
+		padding: 32px 0 62px
+	.main
+		&-top
+			padding-top: 500px
+		&-img-1
+			top: -6%
+			img,svg
+				max-width: 100%
+		&-img-2
+			display: none
+		&-wrap
+			padding-top: 500px
+		&-bg
+			display: none
+			&-mob
+				left: 0
+				top: -60px
+				width: 100%
+				height: 447px
+				background-repeat: no-repeat
+				background-position: top center
+				background-size: cover
+				display: block
+				top: 0
+				left: 50%
+				width: 768px
+				height: 1600px
+		&-human
+			left: auto
+			right: 40px
+			img,svg
+				display: block
+				&.human-1
+					max-width: 350px
+				&.human-2
+					bottom: 70px
+					left: 23px
+					max-width: 281px
+					z-index: 50
+		&-row
+			display: block
+			padding: 0
+		&-col
+			width: 100%
+			padding-bottom: 64px
+		&-bottom
+			text-align: center
+			padding-top: 350px
+		&-info
+			max-width: 100%
+		&-text
+			justify-content: center
+			padding: 0 0 17px
+		&-img-3,&-img-4
+			display: none
+		&-img-mob,&-img-mob-2
+			display: block
+		&-img-3
+			top: -460px
+			left: 0
+			img,svg
+				max-width: 342px
+		&-img-4
+			position: static
+			margin-left: -20px
+			padding-bottom: 38px
+			img,svg
+				max-width: 375px
+		&-title
+			font-size: 30px
+			line-height: 1.2
+			max-width: 380px
+			margin: 0 auto 24px
+		&-subtitle
+			line-height: 1.1
+
+@media only screen and (max-width : 680px)
+	.main
+		&-img-1
+			top: -3%
+		&-bg
+			&-mob
+				width: 680px
+		&-top
+			padding-top: 450px
+		&-wrap
+			padding-top: 400px
+		&-human
+			top: 4px
+			right: auto
+			left: 160px
+			img,svg
+				&.human-2
+					bottom: 78px
+
+@media only screen and (max-width : 580px)
+	.main
+		&-bg
+			&-mob
+				width: 580px
+				left: auto
+				right: 0
+				transform: none
+		&-human
+			top: -70px
+			left: auto
+			right: -40px
+			img,svg
+				&.human-3,&.human-4
+					display: none
+				&.human-2
+					max-width: 323px
+					left: 0
+					bottom: 63px
+		&-top
+			padding-top: 550px
+		&-img-1
+			top: 0
+
+@media only screen and (max-width : 375px)
+	.main
+		&-bg
+			width: 375px
+			right: auto
+			left: 0
+			height: 1500px
+		&-top
+			padding-top: 576px
+		&-wrap
+			padding-top: 295px
+		&-button
+			margin-top: -10px
+		&-human
+			display: none
+			right: auto
+			left: 3px
+			top: -149px
+			img,svg
+				&.human-1
+					max-width: 350px
+				&.human-2
+					display: none
+				&.human-3,&.human-4
+					display: block
+					position: absolute
+					z-index: 10
+				&.human-3
+					max-width: 73px
+					bottom: 123px
+					left: 28px
+				&.human-4
+					max-width: 249px
+					right: -28px
+					bottom: 130px
+			&-mob
+				display: block
+		&-img-3
+			left: -15px
