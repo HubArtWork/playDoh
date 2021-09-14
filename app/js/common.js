@@ -1,12 +1,28 @@
 $(document).ready(function(){
 
+  if($('.personalArea-slider').length){
+    var mySwiper = new Swiper('.personalArea-slider', {
+      slidesPerView: 1,
+      watchOverflow: true,
+      effect: "fade",
+      loop: true,
+      autoHeight: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  }
+
   $('.table-content').mCustomScrollbar();
   $('.faq-info').mCustomScrollbar();
+  $('.personalArea-table__content').mCustomScrollbar();
 
   //scrollbar
   function scrollbar(){
     $('.table-content').mCustomScrollbar('destroy');
     $('.faq-info').mCustomScrollbar('destroy');
+    $('.personalArea-table__content').mCustomScrollbar();
   }
 
   $(window).on('scroll', function(){
