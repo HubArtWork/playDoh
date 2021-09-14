@@ -1,10 +1,12 @@
 $(document).ready(function(){
 
   $('.table-content').mCustomScrollbar();
+  $('.faq-info').mCustomScrollbar();
 
   //scrollbar
   function scrollbar(){
     $('.table-content').mCustomScrollbar('destroy');
+    $('.faq-info').mCustomScrollbar('destroy');
   }
 
   $(window).on('scroll', function(){

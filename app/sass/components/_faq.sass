@@ -9,13 +9,17 @@
 			padding-bottom: 33px
 	.wrapper
 		max-width: 1092px
+	.mCSB_inside>.mCSB_container
+		margin-right: 20px
+	&-info
+		max-height: 567px
 	&-row
 		display: flex
 		flex-flow: row nowrap
 		justify-content: space-between
 		padding-top: 22px
 	&-col
-		max-width: 500px
+		max-width: 520px
 		width: 100%
 		padding-right: 50px
 	&-form
@@ -94,8 +98,8 @@
 			a,span,b
 				font-weight: 600
 				color: #fff
-			b
-				display: block
+			b,a
+				font-weight: bold
 		p, ul, ol
 			padding-bottom: 18px
 			&.text-small
@@ -114,6 +118,11 @@
 		.page
 			&-wrap
 				padding-bottom: 55px
+			&-bg
+				background-size: 100% 100%
+				top: -180px
+		&-info
+			max-height: 100%
 		&-row
 			display: block
 			padding-top: 25px
@@ -126,3 +135,22 @@
 			max-width: 460px
 			margin: 0 auto
 			padding: 0
+
+@media only screen and (max-width : 580px)
+	.faq
+		.page
+			&-bg
+				top: -280px
+				background-size: cover
+				
+@media only screen and (max-width : 375px)
+	.faq
+		&-info
+			padding-left: 0
+			padding-right: 0
+	.accordeon
+		padding-bottom: 25px
+		&-top
+			font-size: 16px
+			line-height: 18px
+			padding: 6px 0 6px 40px

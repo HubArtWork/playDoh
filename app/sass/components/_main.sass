@@ -33,7 +33,7 @@
 			&.human-2
 				position: absolute
 				bottom: 150px
-				left: 40px
+				left: 24px
 				max-width: 485px
 				z-index: 50
 		&-mob
@@ -156,11 +156,15 @@
 
 @media only screen and (max-width : 1300px)
 	.main
+		&-bg
+			left: -100px
+			transform: translate(0,0)
 		&-img-1
 			img,svg
 				max-width: 800px
 		&-img-2
 			top: 400px
+			right: -20px
 		&-img-4
 			right: -30px
 			img,svg
@@ -171,6 +175,8 @@
 		&-img-1
 			img,svg
 				max-width: 660px
+		&-img-2
+			display: none
 		&-img-4
 			img,svg
 				max-width: 400px
@@ -192,6 +198,7 @@
 			padding-top: 500px
 		&-bg
 			display: none
+			transform: translate(-50%,0)
 			&-mob
 				left: 0
 				top: -60px
@@ -291,7 +298,7 @@
 				&.human-2
 					max-width: 323px
 					left: 0
-					bottom: 63px
+					bottom: 67px
 		&-top
 			padding-top: 550px
 		&-img-1
