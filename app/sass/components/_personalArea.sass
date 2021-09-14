@@ -155,24 +155,26 @@
 	&-img
 		height: 290px
 		margin-bottom: 10px
+		position: relative
 		img,svg
 			display: block
-		&-1
-			img,svg
-				position: absolute
-				top: -10px
-				right: 17px
-				display: block
-				min-width: 465px
-				height: 290px
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			width: 330px
+			height: 330px
+			image-rendering: optimizequality
+			image-rendering: -webkit-optimize-contrast
 	&-tit
 		display: block
+		max-width: 230px
+		margin: 0 auto
 		font-size: 21px
 		line-height: 25px
 		font-weight: 900
 		text-transform: uppercase
 		color: $colorAccent
-		margin: 0
 		position: relative
 		z-index: 10
 	&-col
