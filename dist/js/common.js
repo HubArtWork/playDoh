@@ -1,4 +1,13 @@
 $(document).ready(function(){
+  if($('.header-list').length){
+    $('.header-list li a').each(function () {
+      $(this).on("click", function(){
+        var attr = $(this).attr('href');
+        if(!$(this).is('[target]'))
+          $(location).attr('href', attr);
+      });
+    });
+  }
 
   if($('.personalArea-slider').length){
     var mySwiper = new Swiper('.personalArea-slider', {
