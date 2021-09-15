@@ -101,6 +101,12 @@
 			color: rgba($colorAccent, 1)
 
 .winners
+	padding-bottom: 228px
+	.footer
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
 	.page-content
 		padding-bottom: 71px
 	.wrapper
@@ -113,6 +119,7 @@
 		&-row
 			align-items: center
 			padding-bottom: 6px
+			justify-content: center
 			.col-1
 				width: 28.5%
 			.col-2
@@ -178,6 +185,7 @@
 
 @media only screen and (max-width : 580px)
 	.winners
+		padding-bottom: 280px
 		.table
 			&-row
 				.col-1
@@ -189,7 +197,11 @@
 					padding-right: 0
 
 @media only screen and (max-width : 375px)
+	.page
+		&-title
+			font-size: 60px
 	.winners
+		padding-bottom: 320px
 		.table
 			&-row
 				.col-1

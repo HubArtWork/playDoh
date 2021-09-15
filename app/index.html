@@ -6,11 +6,7 @@
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!--<meta property="og:image" content="path/to/image.jpg">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="icon" type="image/png" href="img/favicon-min.png">
 	<link rel="stylesheet" href="css/main.min.css">
 	<meta name="theme-color" content="#000">
 	<meta name="msapplication-navbutton-color" content="#000">
@@ -119,6 +115,7 @@
 			<div class="modal-close"></div>
 			<form action="">
 				<span class="modal-title">Регистрация</span>
+				<div class="input-text">Неправильный логин или пароль</div>
 				<div class="input-block">
           <input type="Text" name="FullName" placeholder="Имя" required>
         </div>
@@ -164,6 +161,7 @@
 			<div class="modal-close"></div>
 			<form action="">
 				<span class="modal-title">Вход на сайт</span>
+				<div class="input-text">Неправильный логин или пароль</div>
 				<div class="input-block">
           <input type="Text" name="email" placeholder="E-mail" required>
         </div>
@@ -195,6 +193,49 @@
       </div>
     </div>
   </div>
+  <!-- modal-forgot -->
+	<div id="modal-forgot" class="modal modal-form modal-second">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<form action="">
+				<span class="modal-title">Сброс пароля</span>
+				<span class="modal-text">Укажите почту, с которой вы регистрировались на сайте</span>
+				<div class="input-text">Неправильный логин или пароль</div>
+        <div class="input-block">
+          <input type="Text" name="email" placeholder="E-mail" required>
+        </div>
+        <div class="modal-button">
+        	<button class="primary-btn">отправить</button>
+        </div>
+			</form>
+		</div>
+	</div>
+	<!-- modal-message -->
+	<div id="modal-message" class="modal modal-form modal-second">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-block">
+				<span class="modal-subtitle">восстановление пароля</span>
+				<span class="modal-text modal-text-big">Новый пароль выслан на указанный<br>вами адрес электронной почты</span>
+        <div class="modal-button">
+        	<button class="primary-btn">войти</button>
+        </div>
+			</div>
+		</div>
+	</div>
+	<!-- modal-message -->
+	<div id="modal-message" class="modal modal-form">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-block">
+				<span class="modal-title">Обратная связь</span>
+				<span class="modal-text modal-text-big">Спасибо за Ваше обращение.<br>Мы ответим на него в ближайшее время.</span>
+        <div class="modal-button">
+        	<button class="primary-btn">войти</button>
+        </div>
+			</div>
+		</div>
+	</div>
 	<script defer src="js/scripts.min.js"></script>
 	<script defer src="js/common.js"></script>
 </body>

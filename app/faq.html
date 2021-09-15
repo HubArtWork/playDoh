@@ -228,6 +228,7 @@
 							<div class="faq-wrap">
 								<form action="">
 									<span class="faq-subtitle">Отправь нам сообщение и мы обязательно ответим!</span>
+									<div class="input-text">Неправильный логин или пароль</div>
 									<div class="input-block">
 					          <input type="Text" name="FullName" placeholder="Ваше имя" required>
 					        </div>
@@ -235,11 +236,15 @@
 					          <input type="Text" name="email" placeholder="Ваш E-mail" required>
 					        </div>
 					        <div class="input-block">
-					        	<select name="Text">
-					        		<option value="" selected="true" disabled="disabled">Выберите тему сообщения</option>
-					        		<option value="">Тема сообщения</option>
-					        		<option value="">Тема сообщения</option>
-					        	</select>
+					        	<div class="select select-faq">
+											<select name="Text" data-placeholder="Выберите тему сообщения" required>
+												<option value="1">Тема сообщения</option>
+												<option value="2">Тема сообщения</option>
+												<option value="3">Тема сообщения</option>
+												<option value="4">Тема сообщения</option>
+												<option value="5">Тема сообщения</option>
+											</select>	
+				            </div>
 					        </div>
 					        <div class="input-block">
 					        	<textarea name="Text" placeholder="Ваше сообщение" required></textarea>
