@@ -8,14 +8,18 @@
 	padding: 107px 0 53px
 	position: relative
 	z-index: 10
-	p
+	p,a
 		max-width: 1027px
 		font-size: 16px
 		line-height: 1
 		font-weight: 600
 		color: $colorAccent
-		a
-			color: $colorAccent
+	p
+		margin-bottom: 10px
+	a
+		text-decoration: underline
+		&:hover
+			text-decoration: none
 
 @media only screen and (max-width : 580px)
 	.footer
@@ -23,6 +27,7 @@
 		text-align: center
 		background-image: url(../img/footer-bg-mob-min.png)
 		p
-			min-height: 113px
+			min-height: 97px
+		p,a
 			font-size: 14px
 			line-height: 16px
